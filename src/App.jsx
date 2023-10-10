@@ -2,6 +2,8 @@
 import logoFreeCodeCamp from "../src/imagenes/freecodecamp-logo.png"
 import './App.css'
 import Button from"./componentes/Button"
+import Pantalla from"./componentes/Pantalla"
+
 function App() {
 
   return (
@@ -11,7 +13,7 @@ function App() {
       </div>
 
       <div className="contenedor-calculadora">
-
+      <Pantalla/>
         <div className="fila">
           <Button>1</Button>
           <Button>2</Button>
@@ -37,6 +39,7 @@ function App() {
           <Button>/</Button>
         </div>
       </div>
+
     </div>
     
   )
