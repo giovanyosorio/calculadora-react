@@ -1,5 +1,5 @@
 import React from "react"
-
+import "../stylesheet/Pantalla.css"
 function Pantalla({input}){
 
     return(
