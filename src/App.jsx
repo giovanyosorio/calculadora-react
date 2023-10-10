@@ -11,10 +11,10 @@ function App() {
       </div>
 
       <div className="contenedor-calculadora">
-        <div className="fila">
 
-        <Button>1</Button>
-        <Button>+</Button>
+        <div className="fila">
+          <Button>1</Button>
+          <Button>+</Button>
         </div>
       </div>
     </div>
