@@ -1,9 +1,8 @@
 import React from "react"
-
+import "../stylesheet/Button.css"
 function Botton(props){
 
         const esOperador=valor=>{
-           // console.log(props.children)
             return isNaN(valor) && (valor!='.') &&(valor!='=')
         }
 
