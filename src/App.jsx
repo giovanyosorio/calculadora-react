@@ -11,9 +11,15 @@ function App() {
 
     const [input,setInput]=useState("");
 
+
     const agregarInput=valor=>{
       setInput(input+valor)
     }
+
+    const limpiarInput=()=>{
+      setInput("")
+    }
+
   return (
     <div className='App'>
       <div className='freecodecamp-logo-contenedor'>
@@ -47,7 +53,7 @@ function App() {
           <Button manejarClick={agregarInput}>/</Button>
         </div>
         <div className="fila">
-          <ButtonClear>
+          <ButtonClear manejarClick={limpiarInput}>
             Clear
           </ButtonClear>
         </div>
