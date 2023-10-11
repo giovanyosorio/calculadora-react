@@ -6,7 +6,7 @@ function ButtonClear(props){
 
     return(
         <div className="boton-clear"
-        onClick={()=>props.manejarClick()}>
+        onClick={()=>props.manejarClear()}>
             {props.children}
         </div>
 

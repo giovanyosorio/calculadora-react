@@ -6,6 +6,8 @@ import Pantalla from"./componentes/Pantalla"
 import ButtonClear from"./componentes/ButtonClear"
 import { useState } from "react"
 
+import {evaluate} from "mathjs"
+
 
 function App() {
 
@@ -18,6 +20,10 @@ function App() {
 
     const limpiarInput=()=>{
       setInput("")
+    }
+
+    const calcularRestulado=()=>{
+      setInput(evaluate(input))
     }
 
   return (
@@ -47,13 +53,13 @@ function App() {
           <Button manejarClick={agregarInput}> *</Button>
         </div>
         <div className="fila">
-          <Button manejarClick={agregarInput}>=</Button>
+          <Button manejarClick={calcularRestulado}>=</Button>
           <Button manejarClick={agregarInput}>0</Button>
           <Button manejarClick={agregarInput}>.</Button>
           <Button manejarClick={agregarInput}>/</Button>
         </div>
         <div className="fila">
-          <ButtonClear manejarClick={limpiarInput}>
+          <ButtonClear manejarClear={limpiarInput}>
             Clear
           </ButtonClear>
         </div>
