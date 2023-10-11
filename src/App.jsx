@@ -22,8 +22,13 @@ function App() {
       setInput("")
     }
 
-    const calcularRestulado=()=>{
-      setInput(evaluate(input))
+    const calcularResultado=()=>{
+      if(input){
+        setInput(evaluate(input))
+      } else{
+        alert("ingrese valores para realizar los calculos")
+      }
+
     }
 
   return (
@@ -53,7 +58,7 @@ function App() {
           <Button manejarClick={agregarInput}> *</Button>
         </div>
         <div className="fila">
-          <Button manejarClick={calcularRestulado}>=</Button>
+          <Button manejarClick={calcularResultado}>=</Button>
           <Button manejarClick={agregarInput}>0</Button>
           <Button manejarClick={agregarInput}>.</Button>
           <Button manejarClick={agregarInput}>/</Button>
